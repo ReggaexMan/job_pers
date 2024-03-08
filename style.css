@@ -1,0 +1,165 @@
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control,
+.form-control-plaintext {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.form-control {
+  border-radius: 0.25rem;
+}
+
+.form-control-plaintext {
+  border: none;
+}
+
+.btn {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #000000;
+}
+
+.btn-primary {
+  background-color: #005294;
+}
+
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  background-color: #00386b;
+  color: white;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  border-color: #005294;
+  color: #005294;
+}
+
+.btn-outline-danger {
+  background-color: transparent;
+  border-color: #d9534f;
+  color: #d9534f;
+}
+
+.btn-outline-danger:hover {
+  background-color: #d9534f;
+  color: white;
+}
+
+.btn-link {
+  background-color: transparent;
+  color: #005294;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center; /* Centre le groupe de boutons horizontalement */
+  gap: 10px; /* Espacement entre les boutons */
+  margin-top: 20px; /* Espace au-dessus du groupe de boutons */
+  flex-wrap: nowrap; /* Permet aux boutons de passer à la ligne si l'espace est insuffisant */
+}
+
+.list-group {
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+}
+
+.list-group-item {
+  padding: 0.5rem 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+}
+
+.list-group-item-action {
+  background-color: #fff;
+  border: 2px solid #005294;
+  color: #005294;
+}
+
+.list-container {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.job-label,
+.person-name {
+  font-weight: bold;
+}
+
+.list-item-actions,
+.person-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.person-item {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.person-item:last-child {
+  border-bottom: none;
+}
+
+.feedback {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 20px;
+  border-radius: 0.25rem;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.success {
+  background-color: #28a745;
+}
+
+.error {
+  background-color: #dc3545;
+}
