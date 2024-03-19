@@ -10,13 +10,13 @@
 
 <body>
     <?php
-    $base_donnees_nom = 'job_pers';
+    include '../config_db.php';
     $id = $_GET['id'] ?? null; // Récupère l'ID depuis l'URL
 
     if ($id) {
         try {
             // Initialisation de la connexion à la base de données
-            $db = new PDO('mysql:host=localhost;dbname=' . $base_donnees_nom . ';charset=utf8', 'root', 'root');
+            $db = new PDO("mysql:host=$host;dbname=$base_donnees_nom;charset=utf8", $username, $password);
 
             // Préparation de la requête SQL de sélection
             $sqlGetJob = 'SELECT * FROM job WHERE id = :id';

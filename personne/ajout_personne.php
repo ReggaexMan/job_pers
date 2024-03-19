@@ -1,12 +1,12 @@
 <?php
+include '../config_db.php';
 
 $nom =  $_POST["nom"];
 $prenom = $_POST["prenom"];
 $job = $_POST["job"];
 
-$base_donnees_nom = "job_pers";
 try {
-    $db = new PDO("mysql:host=localhost;dbname=$base_donnees_nom;charset=utf8", "root", "root");
+    $db = new PDO("mysql:host=$host;dbname=$base_donnees_nom;charset=utf8", $username, $password);
     $dataInsertionPers = [
         "nom" => $nom,
         "prenom" => $prenom,

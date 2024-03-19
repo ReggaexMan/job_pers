@@ -1,14 +1,15 @@
 <?php
+include '../config_db.php';
+
 $label = $_POST['job_nom'] ?? '';
 $desc = $_POST['job_desc'] ?? '';
 $id = $_POST['id'] ?? '';
-$base_donnees_nom = "job_pers";
 $message = "";
 $success = false;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($id)) {
     try {
-        $db = new PDO("mysql:host=localhost;dbname=$base_donnees_nom;charset=utf8", "root", "root");
+        $db = new PDO("mysql:host=$host;dbname=$base_donnees_nom;charset=utf8", $username, $password);
         $sqlUpdateJob = "UPDATE job SET label = :label, description_job = :desc WHERE id = :id";
         $stmt = $db->prepare($sqlUpdateJob);
         $stmt->bindParam(':label', $label);

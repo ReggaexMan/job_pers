@@ -1,13 +1,14 @@
 <?php
+include '../config_db.php';
+
 $label = $_POST['job_nom'] ?? '';
 $desc = $_POST['job_desc'] ?? '';
-$base_donnees_nom = "job_pers";
 $message = "";
 $success = false;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
-        $db = new PDO("mysql:host=localhost;dbname=$base_donnees_nom;charset=utf8", "root", "root");
+        $db = new PDO("mysql:host=$host;dbname=$base_donnees_nom;charset=utf8", $username, $password);
         $sqlInsertJob = "INSERT INTO job (label, description_job) VALUES (:label, :desc)";
         $stmt = $db->prepare($sqlInsertJob);
         $stmt->bindParam(':label', $label);
