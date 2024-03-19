@@ -1,7 +1,7 @@
 <?php
-$base_donnees_nom = "wxqudwagfko2cwys";
+include '../config_db.php';
 try {
-    $db = new PDO("mysql:host=lmag6s0zwmcswp5w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=$base_donnees_nom;charset=utf8", "swv9e6stzf4ehkcl", "fvtyqc310t5s4cgf");
+    $db = new PDO("mysql:$host;dbname=$base_donnees_nom;charset=utf8", $username, $password);
     $tousPers = "SELECT * FROM personne";
     $stmt = $db->prepare($tousPers);
     $stmt->execute();
