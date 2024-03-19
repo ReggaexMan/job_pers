@@ -1,7 +1,7 @@
 <?php
 include '../config_db.php';
 try {
-    $db = new PDO("mysql:$host;dbname=$base_donnees_nom;charset=utf8", $username, $password);
+    $db = new PDO("mysql:host=$host;dbname=$base_donnees_nom;charset=utf8", $username, $password);
     $tousPers = "SELECT * FROM personne";
     $stmt = $db->prepare($tousPers);
     $stmt->execute();
