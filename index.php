@@ -13,7 +13,7 @@
     <div class="container">
         <h1>Ajouter un nouvel emploi</h1>
 
-        <form action="../job_pers/job/ajout_job.php" method="post">
+        <form action="job/ajout_job.php" method="post">
             <div class="form-group">
                 <label for="jobName">Libellé du job</label>
                 <input type="text" class="form-control" id="jobName" name="job_nom" required>
