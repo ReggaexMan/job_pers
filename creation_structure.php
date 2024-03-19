@@ -1,7 +1,7 @@
 <?php
 $base_donnees_nom = "job_pers";
 try {
-    $db = new PDO("mysql:host=localhost;dbname=mysql;charset=utf8", "root", "root");
+    $db = new PDO("mysql:host=lmag6s0zwmcswp5w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=wxqudwagfko2cwys;charset=utf8", "swv9e6stzf4ehkcl", "fvtyqc310t5s4cgf");
     $sql_creation_bdd = "CREATE DATABASE IF NOT EXISTS $base_donnees_nom";
     $stmt = $db->prepare($sql_creation_bdd);
     $information_requete = $stmt->execute();
@@ -17,7 +17,7 @@ try {
 }
 
 try {
-    $db = new PDO("mysql:host=localhost;dbname=$base_donnees_nom;charset=utf8", "root", "root");
+    $db = new PDO("mysql:host=lmag6s0zwmcswp5w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=$base_donnees_nom;charset=utf8", "swv9e6stzf4ehkcl", "fvtyqc310t5s4cgf");
     $sqlCreationTableJob = "CREATE TABLE IF NOT EXISTS job (
         id int NOT NULL AUTO_INCREMENT,
         label varchar(30) NOT NULL,
