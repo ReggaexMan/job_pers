@@ -1,7 +1,7 @@
 <?php
-$base_donnees_nom = "job_pers";
+$base_donnees_nom = "wxqudwagfko2cwys";
 try {
-    $db = new PDO("mysql:host=localhost;dbname=$base_donnees_nom;charset=utf8", "root", "root");
+    $db = new PDO("mysql:host=lmag6s0zwmcswp5w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=$base_donnees_nom;charset=utf8", "swv9e6stzf4ehkcl", "fvtyqc310t5s4cgf");
     $tousPers = "SELECT * FROM personne";
     $stmt = $db->prepare($tousPers);
     $stmt->execute();
