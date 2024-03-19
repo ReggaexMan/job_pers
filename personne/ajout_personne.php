@@ -12,7 +12,7 @@ try {
         "prenom" => $prenom,
         "job" => $job
     ];
-    $sqlInsertionPers = "INSERT INTO PERSONNE (nom, prenom, job) VALUES (:nom, :prenom, :job)";
+    $sqlInsertionPers = "INSERT INTO personne (nom, prenom, job) VALUES (:nom, :prenom, :job)";
     $stmt = $db->prepare($sqlInsertionPers);
     $information_requete = $stmt->execute($dataInsertionPers);
     if ($information_requete) {
