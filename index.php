@@ -27,8 +27,8 @@
             <button type="submit" class="btn btn-primary">Ajouter le job</button>
         </form>
         <div class="btn-group">
-            <a href="../job_pers/personne/liste_personne.php" class="btn btn-outline-primary">Liste du personnel</a>
-            <a href="../job_pers/job/liste_job.php" class="btn btn-outline-primary">Liste des emplois</a>
+            <a href="personne/liste_personne.php" class="btn btn-outline-primary">Liste du personnel</a>
+            <a href="job/liste_job.php" class="btn btn-outline-primary">Liste des emplois</a>
         </div>
     </div>
 

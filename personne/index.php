@@ -58,7 +58,7 @@ try {
             <button type="submit" class="btn btn-primary">Ajouter la personne</button>
         </form>
         <div class="btn-group">
-            <a href="../personne/liste_personne.php" class="btn btn-outline-primary">Liste du personnel</a>
+            <a href="liste_personne.php" class="btn btn-outline-primary">Liste du personnel</a>
             <a href="../job/liste_job.php" class="btn btn-outline-primary">Liste des emplois</a>
         </div>
     </div>
